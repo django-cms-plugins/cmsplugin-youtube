@@ -1,0 +1,6 @@
+*.pyc
+
+static/*
+.idea/*
+settings_mirza.py
+.DS_Store
