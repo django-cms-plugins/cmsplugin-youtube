@@ -62,7 +62,7 @@ setup(
         packages=packages,
         data_files=data_files,
         classifiers=[
-            'Development Status :: 3 - Alpha',
+            'Development Status :: 3',
             'Environment :: Web Environment',
             'Framework :: Django',
             'Intended Audience :: Developers',

@@ -4,8 +4,13 @@ from django.utils.translation import ugettext as _
 from cms.models import CMSPlugin
 
 from cmsplugin_youtube import settings
+import utils
+
+TEMPLATE_CHOICES = utils.autodiscover_templates()
 
 class YouTube(CMSPlugin):
+    title = models.CharField(_('title'), max_length=100, null=True, blank=True)
+    template = models.CharField(_('template'), max_length=200, blank=True, null=True, choices=TEMPLATE_CHOICES,)
     video_id = models.CharField(_('video id'), max_length=60)
 
     autoplay = models.BooleanField(

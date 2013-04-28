@@ -1,5 +1,5 @@
 
-Name: cmsplugin-youtube
+Name: Modified cmsplugin-youtube, support for templates
 Description: YouTube embedding for django-cms
 
 Original source code
